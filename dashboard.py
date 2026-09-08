@@ -37,8 +37,8 @@ with st.sidebar:
     nodes = st.selectbox("Processors", [4, 16, 64, 256], index=1, help="Use 16 while learning; 64/256 are better for scalability tests.")
     seed = st.number_input("Random seed", 0, 1_000_000, 42)
     st.divider()
-    st.markdown("**Recommended demo order**")
-    st.markdown("1. Topology Explorer\n2. Packet Route\n3. Congestion Trace\n4. Performance Lab\n5. Scalability Sweep")
+    # st.markdown("**Recommended demo order**")
+    # st.markdown("1. Topology Explorer\n2. Packet Route\n3. Congestion Trace\n4. Performance Lab\n5. Scalability Sweep")
 
 mesh = make_topology("mesh", int(nodes))
 hyper = make_topology("hypercube", int(nodes))
